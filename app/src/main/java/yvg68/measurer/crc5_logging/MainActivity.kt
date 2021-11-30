@@ -1,5 +1,5 @@
 package yvg68.measurer.crc5_logging
-
+// lesson 4
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
