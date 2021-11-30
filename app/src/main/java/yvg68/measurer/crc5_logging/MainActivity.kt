@@ -2,48 +2,20 @@ package yvg68.measurer.crc5_logging
 // lesson 4
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.util.Log
+import android.view.View
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Log.d("MainActivityLog", "Печаль и радость, смех и слёзы,")
     }
+    fun onClickTest(view: View){
 
-    override fun onStart() {
-        super.onStart()
-        Log.d("MainActivityLog", "Огонь сердец и песня чувства,")
-
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.d("MainActivityLog", "Экскурс из жесткой жизни прозы")
+        val tvTest = findViewById<TextView>(R.id.tvTest)
+        tvTest.text = "I changed this text!"
 
     }
-
-    override fun onPause() {
-        super.onPause()
-        Log.d("MainActivityLog", "За облака, в любви искусство,")
-
     }
-
-    override fun onStop() {
-        super.onStop()
-        Log.d("MainActivityLog", "Исток души и строк нетленность...")
-
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d("MainActivityLog", "Я восхищаюсь вдохновенно...")
-
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-        Log.d("MainActivityLog", "onRestart")
-
-    }
-}
