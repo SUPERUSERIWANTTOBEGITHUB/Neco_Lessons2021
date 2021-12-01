@@ -1,5 +1,5 @@
 package yvg68.measurer.crc5_logging
-// lesson 4__
+// lesson 4
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -8,12 +8,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Log.d("MainActivityLog", "Печаль и радость, смех и слёзы,")
+        Log.d("MainActivityLog", "onCreate")
     }
 
     override fun onStart() {
         super.onStart()
-        Log.d("MainActivityLog", "Огонь сердец и песня чувства,")
+        Log.d("MainActivityLog", "onStart")
 
     }
 
@@ -25,19 +25,19 @@ class MainActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
-        Log.d("MainActivityLog", "За облака, в любви искусство,")
+        Log.d("MainActivityLog", "ЗonResume")
 
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d("MainActivityLog", "Исток души и строк нетленность...")
+        Log.d("MainActivityLog", "onStop")
 
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d("MainActivityLog", "Я восхищаюсь вдохновенно...")
+        Log.d("MainActivityLog", "onDestroy")
 
     }
 
