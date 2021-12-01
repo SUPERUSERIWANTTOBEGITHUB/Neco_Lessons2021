@@ -8,36 +8,36 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Log.d("MainActivityLog", "Печаль и радость, смех и слёзы,")
+        Log.d("MainActivityLog", "onCreate")
     }
 
     override fun onStart() {
         super.onStart()
-        Log.d("MainActivityLog", "Огонь сердец и песня чувства,")
+        Log.d("MainActivityLog", "onStart")
 
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d("MainActivityLog", "Экскурс из жесткой жизни прозы")
+        Log.d("MainActivityLog", "onResume")
 
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d("MainActivityLog", "За облака, в любви искусство,")
+        Log.d("MainActivityLog", "onPause")
 
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d("MainActivityLog", "Исток души и строк нетленность...")
+        Log.d("MainActivityLog", "onStop")
 
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d("MainActivityLog", "Я восхищаюсь вдохновенно...")
+        Log.d("MainActivityLog", "onDestroy")
 
     }
 
