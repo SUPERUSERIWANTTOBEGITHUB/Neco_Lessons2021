@@ -19,13 +19,13 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        Log.d("MainActivityLog", "Экскурс из жесткой жизни прозы")
+        Log.d("MainActivityLog", "ЭonResume")
 
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d("MainActivityLog", "ЗonResume")
+        Log.d("MainActivityLog", "onResume")
 
     }
 
