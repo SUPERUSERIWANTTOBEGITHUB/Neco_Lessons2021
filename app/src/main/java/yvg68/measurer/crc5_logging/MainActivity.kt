@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         // varia,le for Intent
         lateinit var buttonNext: Button
         var textView = findViewById<TextView>(R.id.textViewMsg)
-        textView.text = "THIS SECOND ACTIVITY."
+        textView.text = "THE STARTING STATE FIRST ACTIVITY."
         var buttonRight = findViewById<Button>(R.id.buttonRight)
         buttonRight.text = "PUSH"
         buttonNext = findViewById<Button>(R.id.buttonNext)
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             var secondActivityIntent = Intent(this, SecondActivity ::class.java)
             secondActivityIntent.putExtra(HELLO_KEY, "This second activity application")
             startActivity(secondActivityIntent)
-        }
+           }
 
 
     }
