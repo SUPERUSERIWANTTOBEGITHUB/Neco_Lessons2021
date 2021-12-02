@@ -1,25 +1,35 @@
 package yvg68.measurer.crc5_logging
 // lesson 4
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import android.view.View
-
+private const val HELLO_KEY = "hello"
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.d("MainActivityLog", "Печаль и радость, смех и слёзы,")
+        lateinit var buttonNext: Button
         var textView = findViewById<TextView>(R.id.textViewMsg)
-        textView.text = "Starting STATE"
+        textView.text = "THIS SECOND ACTIVITY."
         var buttonRight = findViewById<Button>(R.id.buttonRight)
         buttonRight.text = "PUSH"
-
+        buttonNext = findViewById<Button>(R.id.buttonNext)
+        buttonNext.text = "NEXT"
         var buttonLeft = findViewById<Button>(R.id.buttonLeft)
         buttonLeft.text = "DONT PUSH"
         //buttonLeft.background="@android:color/green"
+        buttonNext = findViewById(R.id.buttonNext)
+        buttonNext.setOnClickListener {
+            var secondActivityIntent = Intent(this, SecondActivity ::class.java)
+            secondActivityIntent.putExtra(HELLO_KEY, "This second activity application")
+            startActivity(secondActivityIntent)
+        }
+
 
     }
     fun onClickButtonRight(view: View){
@@ -40,7 +50,9 @@ class MainActivity : AppCompatActivity() {
         buttonLeft.text = "DONT PUSH"
 
     }
-
+    fun onClickButtonBack(view:View){
+        
+    }
     override fun onStart() {
         super.onStart()
         Log.d("MainActivityLog", "Огонь сердец и песня чувства,")

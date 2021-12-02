@@ -16,7 +16,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginRight="24dp"
         android:textColor="@android:color/black"
-        android:text="Это случайное число между 0 и %1d."
+        android:text="THIS SECOND ACTIVITY."
         android:textSize="36dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,9 +31,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClickButtonBack"
-        android:text="Button"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="360dp" />
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewRandom"
