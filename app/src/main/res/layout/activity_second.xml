@@ -15,13 +15,16 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginRight="24dp"
+        android:textColor="@android:color/black"
         android:text="Это случайное число между 0 и %1d."
+        android:textSize="36dp"
+        android:textStile="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.359" />
+        app:layout_constraintVertical_bias="0.123" />
 
     <Button
         android:id="@+id/buttonBack"
@@ -29,6 +32,7 @@
         android:layout_height="wrap_content"
         android:onClick="onClickButtonBack"
         android:text="Button"
+        android:textStile="bold"
         tools:layout_editor_absoluteX="160dp"
         tools:layout_editor_absoluteY="360dp" />
 
@@ -45,5 +49,5 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426" />
+        app:layout_constraintVertical_bias="0.298" />
 </androidx.constraintlayout.widget.ConstraintLayout>
