@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         var buttonLeft = findViewById<Button>(R.id.buttonLeft)
         buttonLeft.text = "DONT PUSH"
 
-        // // Here starting "Intent"
+        // // Here starting "Intent "
         buttonNext = findViewById(R.id.buttonNext)
         buttonNext.setOnClickListener {
             var secondActivityIntent = Intent(this, SecondActivity ::class.java)
