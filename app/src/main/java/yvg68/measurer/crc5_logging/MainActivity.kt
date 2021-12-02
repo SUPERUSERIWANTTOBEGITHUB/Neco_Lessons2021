@@ -7,12 +7,14 @@ import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import android.view.View
+// val for Intent
 private const val HELLO_KEY = "hello"
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.d("MainActivityLog", "Печаль и радость, смех и слёзы,")
+        // varia,le for Intent
         lateinit var buttonNext: Button
         var textView = findViewById<TextView>(R.id.textViewMsg)
         textView.text = "THIS SECOND ACTIVITY."
@@ -23,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         var buttonLeft = findViewById<Button>(R.id.buttonLeft)
         buttonLeft.text = "DONT PUSH"
         //buttonLeft.background="@android:color/green"
+        // // Here starting "Intent"
         buttonNext = findViewById(R.id.buttonNext)
         buttonNext.setOnClickListener {
             var secondActivityIntent = Intent(this, SecondActivity ::class.java)
