@@ -16,8 +16,10 @@ class MainActivity : AppCompatActivity() {
         textView.text = "Starting STATE"
         var buttonRight = findViewById<Button>(R.id.buttonRight)
         buttonRight.text = "PUSH"
+
         var buttonLeft = findViewById<Button>(R.id.buttonLeft)
-        buttonLeft.text = "OK"
+        buttonLeft.text = "DONT PUSH"
+        //buttonLeft.background="@android:color/green"
 
     }
     fun onClickButtonRight(view: View){
@@ -25,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         var buttonRight = findViewById<Button>(R.id.buttonRight)
         var buttonLeft = findViewById<Button>(R.id.buttonLeft)
         textView.text = "PUSHED RIGHT BUTTON"
-        buttonRight.text = "OK"
+        buttonRight.text = "DONT PUSH"
         buttonLeft.text = "PUSH"
 
     }
@@ -35,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         var buttonLeft = findViewById<Button>(R.id.buttonLeft)
         textView.text = "PUSHED LEFT BUTTON"
         buttonRight.text = "PUSH"
-        buttonLeft.text = "OK"
+        buttonLeft.text = "DONT PUSH"
 
     }
 

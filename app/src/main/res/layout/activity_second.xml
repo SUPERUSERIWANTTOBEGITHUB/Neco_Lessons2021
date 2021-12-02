@@ -18,7 +18,7 @@
         android:textColor="@android:color/black"
         android:text="Это случайное число между 0 и %1d."
         android:textSize="36dp"
-        android:textStile="bold"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.145"
@@ -32,7 +32,6 @@
         android:layout_height="wrap_content"
         android:onClick="onClickButtonBack"
         android:text="Button"
-        android:textStile="bold"
         tools:layout_editor_absoluteX="160dp"
         tools:layout_editor_absoluteY="360dp" />
 
@@ -43,7 +42,6 @@
         android:text="R"
         android:textColor="@android:color/black"
         android:textSize="36dp"
-        android:textStile="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
