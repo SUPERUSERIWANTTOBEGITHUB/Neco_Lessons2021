@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         buttonNext.text = "NEXT"
         var buttonLeft = findViewById<Button>(R.id.buttonLeft)
         buttonLeft.text = "DONT PUSH"
-        //buttonLeft.background="@android:color/green"
+
         // // Here starting "Intent"
         buttonNext = findViewById(R.id.buttonNext)
         buttonNext.setOnClickListener {
